@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Web Covid 19</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+        <a class="navbar-brand" href="/">Dev Web Covid 19</a>
+        </div>
+        <ul class="nav navbar-nav">
+        <li><a href="/add-paciente">Cadastrar paciente</a></li>
+        <li><a href="/listar-pacientes">Listar todos os pacientes</a></li>
+        <li><a href="/buscar-paciente">Buscar paciente por nome</a></li>
+        </ul>
+    </div>
+    </nav>
+
+<div class="container">
+  <h2>Cadastrar Paciente</h2>
+  <form action="/cad-paciente" method="POST">
+    <div class="form-group col-md-6">
+      <label for="nome">Nome:</label>
+      <input type="text" class="form-control" placeholder="Digite o nome do paciente" name="nome">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" placeholder="email@email.com" name="email">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="nome">Endereço:</label>
+      <input type="text" class="form-control" placeholder="Rua das Oliveiras, 25" name="endereco">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="nome">Telefone:</label>
+      <input type="text" class="form-control" placeholder="(xx) 99999-9999" name="telefone">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="nome">CPF:</label>
+      <input type="number" class="form-control" placeholder="11211598733" name="cpf">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="nome">Data de internação:</label>
+      <input type="date" class="form-control" name="data_internacao">
+    </div>
+    <button type="submit" class="btn btn-primary">Cadastrar paciente</button>
+  </form>
+</div>
+
+</body>
+</html>
